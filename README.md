@@ -48,6 +48,9 @@ The volume fade only affects the Fire Stick's own audio volume, not your TV's vo
 
 - Tested on a Fire TV Stick 4K (Fire OS 6.7.1.1).
 - Some streaming apps draw video on a hardware layer that may not be dimmed.
-- The app has no internet permission and collects no data.
+- The app has no internet permission and
+- collects no data.
+preview:
 - <img width="1200" height="675" alt="20261023_110523-ANIMATION" src="https://github.com/user-attachments/assets/6d3db568-d54d-4f64-8008-35f56b36e027" />
+<img width="1200" height="675" alt="20261023_104653-ANIMATION" src="https://github.com/user-attachments/assets/a1a573c4-23ab-4c50-aab1-61f8bd5cdf68" />
 
