@@ -26,15 +26,18 @@ jobs:
         with:
           gradle-version: 8.9
 
-      - name: Compiler l'APK
+      - name: Compiler les APK
         working-directory: luminosite
         run: |
           gradle assembleDebug --no-daemon
           cp app/build/outputs/apk/debug/app-debug.apk luminosite.apk
+          cp remote/build/outputs/apk/debug/remote-debug.apk luminosite-remote.apk
 
       - name: Publier la release "latest"
         uses: softprops/action-gh-release@v2
         with:
           tag_name: latest
           name: Dernière version
-          files: luminosite/luminosite.apk
+          files: |
+            luminosite/luminosite.apk
+            luminosite/luminosite-remote.apk
